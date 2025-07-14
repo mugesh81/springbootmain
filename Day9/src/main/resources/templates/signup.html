@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Signup</title></head>
+<body>
+  <h2>Signup Page</h2>
+  <form th:action="@{/signup}" method="post">
+    Username: <input type="text" name="username" required /><br>
+    Password: <input type="password" name="password" required /><br>
+    <button type="submit">Signup</button>
+  </form>
+  <p th:text="${message}"></p>
+  <a th:href="@{/login}">Already have an account? Login</a>
+</body>
+</html>
